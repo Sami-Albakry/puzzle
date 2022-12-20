@@ -1,0 +1,175 @@
+ body{
+ margin:0;
+ padding:0;
+ }
+ #third{
+     background: url("/static/img/puzzle_solving.jpeg") ;
+     background-repeat:no-repeat;
+     background-size:cover;
+     filter: grayscale(20%);
+     color: white;
+
+     }
+
+.changeimg{
+height: 100%;}
+
+
+
+
+.fieldset1{
+         width: 300px;
+         height: 300px;
+         position:absolute;
+         left: 25%;
+         top: 25%;
+         }
+
+
+.fieldset2{
+         width: 300px;
+         height: 300px;
+         position:absolute;
+         left: 60%;
+         top: 25%;
+         }
+
+.fieldsetP2{
+        width:300px;
+        height:300px;
+        position:absolute;
+        left: 1000px;
+        top: 250px;
+        }
+
+.list{
+            width:300px;
+            }
+
+
+.labels{
+          width: 300px;
+          height: 32px;
+          text-align: center;
+          background-color: #70864f;
+          color: white;
+          border-radius: 20px;
+          position: absolute;
+          top: 20%;
+          font-size: 30px;
+          text-shadow: 3px 3px #000000;
+    }
+
+.lable1{
+             left: 25%;
+
+    }
+
+.lable2{
+            left:60%;
+
+            }
+.lable3{
+            left: 41%;
+            top: 7%;
+            background-color: #ff000014;
+            width: 330px;
+            height: 100px;
+            font-size:40px;
+            }
+
+.Solution{
+         left: 35%;
+         top: 7px;
+         width:500px;
+    }
+
+.grid-container {
+         display: grid;
+         grid-template-columns: auto auto auto;
+         background-color:#3E4F5D;
+         padding: 10px;
+         width: 250px;
+    }
+
+.grid-all{
+             display: grid;
+              grid-template-columns: auto auto auto auto auto auto auto auto auto auto ;
+    }
+.div{
+        width: 100px;
+        margin: 10px;
+   }
+
+.span{
+            font-size: 18px;
+             color: white;
+             text-shadow: 3px 3px #000;
+             }
+
+
+.grid-item {
+       background-color: rgba(0, 0, 0, 0.8);
+       border: 1px solid rgba(0, 0, 0, 0.8);
+       padding: 10px;
+       font-size: 30px;
+       text-align: center;
+       width: 65px;
+       height: 65px;
+       margin: 1px;
+       color: red;
+  }
+
+.StartGame{
+             position: absolute;
+             left: 47%;
+             top: 70%;
+             width: 150px;
+             height: 150px;
+             color: white;
+             background-color: green;
+             border-radius: 50%;
+             font-size: 25px;
+             text-shadow: 3px 3px #000000;
+    }
+.eight-puzzle {
+          margin: 0;
+          width: 272px;
+          height: 272px;
+          border: 2px solid #444444;
+          padding: 5px;
+          margin: 14px 0 0 14px;
+    }
+
+ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 0;
+        }
+li{
+      display: inline-block;
+      margin: 5px;
+      width: 50px;
+      height: 50px;
+
+      line-height: 50px;
+      font-size: 40px;
+      text-align: center;
+      }
+
+.change{
+            width: 90px;
+            height: 90px;
+            }
+
+.zero{background-color: #363232;
+            width: 130%;
+            margin: 0;
+            padding: 0;
+            height: 130%;
+            position: relative;
+            left:-11px;
+            top: -11px;
+            border: 1px solid black;
+            }

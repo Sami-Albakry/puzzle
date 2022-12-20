@@ -1,0 +1,60 @@
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gameStarted</title>
+    <link rel="stylesheet" href="{%static 'css/main.css'%}">
+
+</head>
+<body >
+<div id="third" >
+
+        <label class="labels Solution">Solution Way</label>
+        <form action="" method="post">
+            {% csrf_token %}
+            <input type="submit" value="NEW Game">
+        </form>
+             <div class="div">
+            {%for i in arrayTomove%}
+
+        {% if i == 'U' %}
+            <span class="span">({{forloop.counter}}):UP...</span>
+        {% elif i == 'D' %}
+            <span class="span">({{forloop.counter}}):Down...</span>
+        {% elif i == 'R' %}
+            <span class="span">({{forloop.counter}}):Right...</span>
+        {% elif i == 'L' %}
+            <span class="span">({{forloop.counter}}):Left...</span>
+        {% endif %}
+            {%endfor%}
+            </div>
+        <div class="grid-all">
+
+
+        {%for i in arrayToPrint%}
+            <span class="span">({{forloop.counter}})</span>
+       <fieldset class="grid-container list">
+        {%for j in i%}
+        {%for m in j%}
+        <ul class="grid-item">
+            {% if m != 0 %}
+            <li >{{m}}</li>
+            {% endif %}
+            {% if m == 0 %}
+            <li class="zero"></li>
+            {% endif %}
+
+
+        </ul>
+        {%endfor%}
+        {%endfor%}
+        </fieldset>
+        {%endfor%}
+        </div>
+
+</div>
+    <script src="static/homegame.js"></script>
+</body>
+</html>
